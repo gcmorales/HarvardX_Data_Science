@@ -823,7 +823,7 @@ rmse_results %>% knitr::kable()
 # Exploration to check for Regularization Needs
 #########################################################################################################################################################################################
   
-# Let´s see the largest errors, not necessarily obscure movies
+# LetÂ´s see the largest errors, not necessarily obscure movies
   edx_test %>%
   left_join(movie_avgs, by = 'movieId') %>%
   mutate(residual = rating - (mu + b_i)) %>%
